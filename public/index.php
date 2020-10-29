@@ -30,7 +30,7 @@ $app = AppFactory::create();
 $container = $app->getContainer();
 
 $container->set('HomeController', function (ContainerInterface $container) {    
-    return new HomeController($view);
+    return new \Source\HomeController($view);
 });
 
 // Add Routing Middleware
